@@ -15,6 +15,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+.lineUpButton, .moveRandomButton, .BattleButton{
+  padding:5px 12px;
+  float:left;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -25,11 +29,15 @@ body, a:link, a:visited, a:active{
 .dancer{
   position:absolute;
 }
-.roshiDancer img{
-  background: gif/roshi.gif;
-  width: auto;
-}
 
+.flipped {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
 /*.dancer:hover {
     position:relative;
     top:-255px;

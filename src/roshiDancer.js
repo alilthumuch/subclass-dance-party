@@ -11,11 +11,16 @@ var makeRoshiDancer = function(top, left, timeBetweenSteps) {
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-  $('.roshi').on('click', function () {
+  
+  //this.$node.find('img').on('click', function () {
+  this.$node.find('img').on('click', function() {
+  //$('.roshi').on('click', function () {
+    console.log('roshi click');
     $(this).width(300);
+    $(this).toggleClass('flipped');
     // $(this).animate({ height: '300', width: '450' }, 1500);
   });
-  
+
 };
 
 makeRoshiDancer.prototype = Object.create(makeDancer.prototype)
